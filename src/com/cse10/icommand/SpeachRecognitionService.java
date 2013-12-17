@@ -258,7 +258,7 @@ public class SpeachRecognitionService extends Service {
 			
 				
 				Intent callIntent = new Intent(Intent.ACTION_CALL);
-				callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // added the flag 
 				callIntent.setData(Uri.parse("tel:" + number));
 				startActivity(callIntent);
 			}
